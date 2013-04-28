@@ -1,0 +1,33 @@
+/* line 1, ../../sass/layouts/default.sass */
+footer {
+  background-color: #73822f;
+  padding-top: 10px;
+}
+
+/* line 5, ../../sass/layouts/default.sass */
+.container {
+  background-color: #b1a077;
+}
+
+/* line 8, ../../sass/layouts/default.sass */
+.right {
+  text-align: right;
+}
+
+/* line 11, ../../sass/layouts/default.sass */
+#content {
+  margin-left: 2.5%;
+  padding: 0;
+  width: 95%;
+}
+
+/* line 16, ../../sass/layouts/default.sass */
+#finalLine {
+  margin-top: 0;
+}
+
+/* line 19, ../../sass/layouts/default.sass */
+#menu {
+  background-color: #e5fcb8;
+  color: #73822f;
+}
