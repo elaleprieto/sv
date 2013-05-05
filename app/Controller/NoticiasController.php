@@ -6,7 +6,21 @@ App::uses('AppController', 'Controller');
  * @property Noticia $Noticia
  */
 class NoticiasController extends AppController {
+	
+	public $paginate = array(
+        'limit' => 2,
+    );
 
+ /**
+ * admin_index method
+ *
+ * @return void
+ */
+	public function admin_index() {
+		$this->Noticia->recursive = 0;
+		$this->set('noticias', $this->paginate());
+	}
+	
 /**
  * index method
  *
@@ -47,6 +61,7 @@ class NoticiasController extends AppController {
 				$this->Session->setFlash(__('The noticia could not be saved. Please, try again.'));
 			}
 		}
+		$this->set('users', $this->Noticia->User->find('list'));
 	}
 
 /**
