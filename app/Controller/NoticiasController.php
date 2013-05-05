@@ -10,6 +10,11 @@ class NoticiasController extends AppController {
 	public $paginate = array(
         'limit' => 2,
     );
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('');
+	}
 
 
 /**
