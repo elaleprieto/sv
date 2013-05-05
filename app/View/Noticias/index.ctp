@@ -1,4 +1,5 @@
 <?php $this->Html->css('noticias/index', null, array('inline' => false)) ?>
+
 <div class="noticias">
 	<?php foreach ($noticias as $noticia): ?>
 		<h1 class="title"><?php echo h($noticia['Noticia']['title']) ?></h1>

@@ -1,0 +1,29 @@
+/* line 3, ../../sass/noticias/admin_add.sass */
+h2.title {
+  color: #bfbfbf;
+  font-size: 8pt;
+  font-weight: normal;
+}
+
+/* line 8, ../../sass/noticias/admin_add.sass */
+label {
+  font-family: monospace;
+}
+
+/* line 11, ../../sass/noticias/admin_add.sass */
+input[type=submit], button[type=button] {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #c0cf7b));
+  background-image: -webkit-linear-gradient(top, #ffffff, #c0cf7b);
+  background-image: -moz-linear-gradient(top, #ffffff, #c0cf7b);
+  background-image: -o-linear-gradient(top, #ffffff, #c0cf7b);
+  background-image: linear-gradient(top, #ffffff, #c0cf7b);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  color: #73822f;
+  height: 28pt;
+  font-size: 14pt;
+}

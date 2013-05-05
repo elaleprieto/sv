@@ -11,24 +11,69 @@ class NoticiasController extends AppController {
         'limit' => 2,
     );
 
+
+/**
+ * admin_add method
+ *
+ * @return void
+ */
+	public function admin_add() {
+		$this->layout = 'admin';
+		if ($this->request->is('post')) {
+			$this->Noticia->create();
+			if ($this->Noticia->save($this->request->data)) {
+				$this->Session->setFlash(__('The noticia has been saved'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The noticia could not be saved. Please, try again.'));
+			}
+		}
+		$this->set('users', $this->Noticia->User->find('list'));
+	}
+	
  /**
  * admin_index method
  *
  * @return void
  */
 	public function admin_index() {
+		$this->layout = 'admin';
 		$this->Noticia->recursive = 0;
+		$this->paginate = array(
+	        'limit' => 20
+	    );
 		$this->set('noticias', $this->paginate());
 	}
-	
+
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
+		$this->paginate = array(
+	        'conditions' => array('Noticia.published'=>TRUE),
+	        'limit' => 2
+	    );
 		$this->Noticia->recursive = 0;
 		$this->set('noticias', $this->paginate());
+	}
+	
+/**
+ * publish method
+ *
+ * @return void
+ */
+	public function admin_publish() {
+		// $this->layout = 'ajax';
+		$this->autoRender = FALSE;
+		if($this->request->isPost() && isset($this->request->data['Noticia']['id']) && isset($this->request->data['Noticia']['published'])) {
+			$this->Noticia->id = $this->request->data['Noticia']['id'];
+			if($this->Noticia->saveField('published', $this->request->data['Noticia']['published'])) {
+				return json_encode(TRUE);
+			}
+		}
+		return json_encode(FALSE);
 	}
 
 /**

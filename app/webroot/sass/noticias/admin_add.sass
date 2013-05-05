@@ -1,0 +1,17 @@
+@import colors, compass
+
+h2.title
+  color: $gris
+  font-size: 8pt
+  font-weight: normal
+
+label
+  font-family: monospace
+  
+input[type=submit], button[type=button]
+  +background-image(linear-gradient(top, $blanco, lighten($verde, 30%)))
+  +border-radius(5px)
+  border: 1px solid
+  color: $verde
+  height: 28pt
+  font-size: 14pt
