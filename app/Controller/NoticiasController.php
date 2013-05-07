@@ -158,4 +158,5 @@ class NoticiasController extends AppController {
 		// $this->Session->setFlash(__('Noticia was not deleted'));
 		// $this->redirect(array('action' => 'index'));
 	// }
-// }
+
+}
