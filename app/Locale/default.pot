@@ -1,0 +1,214 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-05-07 19:51-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/NoticiasController.php:30
+msgid "The noticia has been saved"
+msgstr ""
+
+#: Controller/NoticiasController.php:33
+msgid "The noticia could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/NoticiasController.php:93
+msgid "Invalid noticia"
+msgstr ""
+
+#: Controller/UsersController.php:24
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: View/Noticias/add.ctp:4
+msgid "Add Noticia"
+msgstr ""
+
+#: View/Noticias/add.ctp:11
+#: View/Noticias/edit.ctp:12
+#: View/Users/add.ctp:11
+#: View/Users/edit.ctp:12
+msgid "Submit"
+msgstr ""
+
+#: View/Noticias/add.ctp:14
+#: View/Noticias/edit.ctp:15
+#: View/Noticias/view.ctp:37
+#: View/Users/add.ctp:14
+#: View/Users/edit.ctp:15
+#: View/Users/index.ctp:11;44
+#: View/Users/view.ctp:37;58
+msgid "Actions"
+msgstr ""
+
+#: View/Noticias/add.ctp:17
+#: View/Noticias/edit.ctp:19
+#: View/Noticias/view.ctp:41
+#: View/Users/add.ctp:18
+#: View/Users/edit.ctp:20
+#: View/Users/index.ctp:47
+#: View/Users/view.ctp:43
+msgid "List Noticias"
+msgstr ""
+
+#: View/Noticias/add.ctp:18
+#: View/Noticias/edit.ctp:20
+#: View/Noticias/view.ctp:43
+#: View/Users/add.ctp:17
+#: View/Users/edit.ctp:19
+#: View/Users/view.ctp:41
+msgid "List Users"
+msgstr ""
+
+#: View/Noticias/add.ctp:19
+#: View/Noticias/edit.ctp:21
+#: View/Noticias/view.ctp:44
+#: View/Users/index.ctp:46
+#: View/Users/view.ctp:42
+msgid "New User"
+msgstr ""
+
+#: View/Noticias/edit.ctp:4
+#: View/Noticias/view.ctp:39
+msgid "Edit Noticia"
+msgstr ""
+
+#: View/Noticias/edit.ctp:18
+#: View/Users/edit.ctp:18
+#: View/Users/index.ctp:24
+#: View/Users/view.ctp:73
+msgid "Delete"
+msgstr ""
+
+#: View/Noticias/edit.ctp:18
+#: View/Noticias/view.ctp:40
+#: View/Users/edit.ctp:18
+#: View/Users/index.ctp:24
+#: View/Users/view.ctp:40;73
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Noticias/view.ctp:2
+msgid "Noticia"
+msgstr ""
+
+#: View/Noticias/view.ctp:4
+#: View/Users/view.ctp:4;52
+msgid "Id"
+msgstr ""
+
+#: View/Noticias/view.ctp:9
+#: View/Users/view.ctp:53
+msgid "Title"
+msgstr ""
+
+#: View/Noticias/view.ctp:14
+#: View/Users/view.ctp:54
+msgid "Body"
+msgstr ""
+
+#: View/Noticias/view.ctp:19
+#: View/Users/view.ctp:24;55
+msgid "Created"
+msgstr ""
+
+#: View/Noticias/view.ctp:24
+#: View/Users/view.ctp:29;56
+msgid "Modified"
+msgstr ""
+
+#: View/Noticias/view.ctp:29
+#: View/Users/view.ctp:2
+msgid "User"
+msgstr ""
+
+#: View/Noticias/view.ctp:40
+msgid "Delete Noticia"
+msgstr ""
+
+#: View/Noticias/view.ctp:42
+#: View/Users/add.ctp:19
+#: View/Users/edit.ctp:21
+#: View/Users/index.ctp:48
+#: View/Users/view.ctp:44;82
+msgid "New Noticia"
+msgstr ""
+
+#: View/Users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: View/Users/edit.ctp:4
+#: View/Users/view.ctp:39
+msgid "Edit User"
+msgstr ""
+
+#: View/Users/index.ctp:2
+msgid "Users"
+msgstr ""
+
+#: View/Users/index.ctp:22
+#: View/Users/view.ctp:71
+msgid "View"
+msgstr ""
+
+#: View/Users/index.ctp:23
+#: View/Users/view.ctp:72
+msgid "Edit"
+msgstr ""
+
+#: View/Users/index.ctp:32
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Users/index.ctp:37
+msgid "previous"
+msgstr ""
+
+#: View/Users/index.ctp:39
+msgid "next"
+msgstr ""
+
+#: View/Users/view.ctp:9
+msgid "Username"
+msgstr ""
+
+#: View/Users/view.ctp:14
+msgid "Password"
+msgstr ""
+
+#: View/Users/view.ctp:19
+msgid "Name"
+msgstr ""
+
+#: View/Users/view.ctp:40
+msgid "Delete User"
+msgstr ""
+
+#: View/Users/view.ctp:48
+msgid "Related Noticias"
+msgstr ""
+
+#: View/Users/view.ctp:57
+msgid "User Id"
+msgstr ""
+
+#: Model/Noticia.php:validation for field title;validation for field body
+#: Model/User.php:validation for field username;validation for field password;validation for field name
+msgid "notempty"
+msgstr ""
+
+#: Model/Noticia.php:validation for field user_id
+msgid "numeric"
+msgstr ""
+
