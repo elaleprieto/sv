@@ -10,10 +10,7 @@
 			<?php echo $noticia['User']['name'] ?>
 		</h2>
 		<p class="body">	
-			<?php
-			$parrafos = explode('<br />', nl2br($noticia['Noticia']['body']));
-			echo $parrafos[0]
-			?>
+			<?php echo $noticia['Noticia']['resume'] ?>
 		</p>
 		<p class="link"><?php echo $this->Html->link('[ Seguir Leyendo ]', array('action'=>'view', $noticia['Noticia']['id'])) ?></p>
 	<?php endforeach; ?>
