@@ -6,7 +6,7 @@ app/[Cc]onfig/core.php
 app/[Cc]onfig/database.php
 app/webroot/.sass-cache/*
 !empty
-*.htaccess
+*.htaccess*
 .project
 
 # User specific & automatically generated files #
