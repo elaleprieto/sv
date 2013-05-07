@@ -19,6 +19,13 @@
 		<?php echo $this->Form->input('body', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Cuerpo')) ?>
 	</div>
 	<div class="row-fluid">
+		<?php
+		echo $this->Form->label('Noticia.published', 'Publicada: ', array('class'=>'offset1 span1'));
+		$checkbox = $this->Form->checkbox('published'); 
+		echo $this->Html->div('span1 text-center', $checkbox)
+		?>
+	</div>
+	<div class="row-fluid">
 		<?php echo $this->Form->input('Guardar', array('class'=>'span4', 'div'=>'span6 text-right', 'label'=>FALSE, 'type'=>'submit')) ?>
 		<div class="span6 text-left">
 			<?php echo $this->Form->button('Cancelar', array('class'=>'span4', 'type'=>'button')) ?>
