@@ -13,7 +13,7 @@ class NoticiasController extends AppController {
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('');
+		$this->Auth->allow('index');
 	}
 
 
@@ -73,6 +73,7 @@ class NoticiasController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'default';
 		$this->paginate = array(
 	        'conditions' => array('Noticia.published'=>TRUE),
 	        'limit' => 2
@@ -89,6 +90,7 @@ class NoticiasController extends AppController {
  * @return void
  */
 	public function view($id = null) {
+		$this->layout = 'default';
 		if (!$this->Noticia->exists($id)) {
 			throw new NotFoundException(__('Invalid noticia'));
 		}

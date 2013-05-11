@@ -58,34 +58,40 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 		<div class="container">
-	        <header>
-				<div class="row">
-					<div id="banner" class="span12">
-						<div class="row">
-							<div id="rampa" class="span6">
-							</div>
-							<div class="span6">
-								<?php //echo $this->Html->image('logo.png', array('id'=>'logo')) ?>
-								<?php echo $this->Html->link($this->Html->image('logo.png', array('id'=>'logo')), '/contacto', array('escape'=>false)) ?>
-							</div>
+	        <header class="row">
+				<div class="span12" id="banner">
+					<div class="row">
+						<div id="rampa" class="span6">
+						</div>
+						<div class="span6">
+							<?php //echo $this->Html->image('logo.png', array('id'=>'logo')) ?>
+							<?php echo $this->Html->link($this->Html->image('logo.png', array('id'=>'logo')), '/contacto', array('escape'=>false)) ?>
 						</div>
 					</div>
 				</div>
-				<div id="menu"> :: Noticias</div>
 			</header>
+			<nav id="menu">
+				<?php echo $this->Html->link(':: Noticias', array('controller'=>'noticias', 'action'=>'index')) ?>
+			</nav>
+
+			<div class="fondoMarron row-fluid">
+				<div class="fondoBlanco offset1 span10" id="content">
+					<div class="row-fluid">
+						<div class="span9">
+							<?php echo $this -> Session -> flash(); ?>
 				
-			<section id="content">
-				<?php echo $this -> Session -> flash(); ?>
-	
-				<div class="row">
-					<div class="span9">
-						<?php echo $this -> fetch('content'); ?>
-					</div>
-					<div class="span2">
-						<?php echo $this->Html->image('telefonos.png') ?>
+							<article class="row-fluid">
+								<div class="span12">
+									<?php echo $this -> fetch('content'); ?>
+								</div>
+							</article>
+						</div>
+						<aside class="span2">
+							<?php echo $this->Html->image('telefonos.png') ?>
+						</aside>
 					</div>
 				</div>
-			</section>
+			</div>
 
             <footer>
 	            <hr id="finalLine">

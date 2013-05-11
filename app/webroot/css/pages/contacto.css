@@ -6,7 +6,7 @@ p.info {
   text-align: justify;
 }
 
-/* line 10, ../../sass/pages/contacto.sass */
+/* line 9, ../../sass/pages/contacto.sass */
 h1.title {
   font-family: sans-serif;
   font-size: 16pt;
@@ -14,29 +14,45 @@ h1.title {
   padding-left: 20px;
 }
 
-/* line 17, ../../sass/pages/contacto.sass */
+/* line 15, ../../sass/pages/contacto.sass */
 hr.title {
   border: 1px solid;
   display: block;
   margin: 0 0 20px 0;
+  min-height: 0 !important;
 }
 
-/* line 22, ../../sass/pages/contacto.sass */
+/* line 21, ../../sass/pages/contacto.sass */
+.absolute {
+  position: absolute;
+}
+
+/* line 24, ../../sass/pages/contacto.sass */
+.bottomCero {
+  bottom: 0;
+}
+
+/* line 27, ../../sass/pages/contacto.sass */
+.relative {
+  position: relative;
+}
+
+/* line 30, ../../sass/pages/contacto.sass */
+.rightCero {
+  right: 0;
+}
+
+/* line 33, ../../sass/pages/contacto.sass */
 .title {
   color: #73822f;
 }
 
-/* line 25, ../../sass/pages/contacto.sass */
-#content {
-  padding: 25px 0 0;
-}
-
-/* line 28, ../../sass/pages/contacto.sass */
+/* line 36, ../../sass/pages/contacto.sass */
 #contacto {
   margin-left: 2.5%;
 }
 
-/* line 31, ../../sass/pages/contacto.sass */
+/* line 39, ../../sass/pages/contacto.sass */
 #iconoMapa {
   margin: 315px 0 0 200px;
   position: absolute;

@@ -73,15 +73,23 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				<div id="menu"><?php echo $this->Html->link(' :: Noticias', array('controller'=>'noticias', 'action'=>'index')) ?></div>
 			</header>
 				
-			<section id="content">
-				<?php echo $this -> Session -> flash(); ?>
-	
-				<div class="row">
-					<div class="span11">
-						<?php echo $this -> fetch('content'); ?>
+			
+			<div class="fondoMarron row-fluid">
+				<div class="fondoBlanco offset1 span10" id="content">
+					<div class="row-fluid">
+						<div class="span12">
+							<?php echo $this -> Session -> flash(); ?>
+				
+							<article class="row-fluid">
+								<div class="span12">
+									<?php echo $this -> fetch('content'); ?>
+								</div>
+							</article>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+			
 
             <footer>
 	            <hr id="finalLine">

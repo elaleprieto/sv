@@ -1,74 +1,84 @@
 @import compass/css3, colors
 
 a
-  color: $verde
-  
-  &:hover
-    color: darken($verde, 10%)
-    text-decoration: none
+	color: $verde
+
+	&:hover
+		color: darken($verde, 10%)
+		text-decoration: none
+
+body
+	color: $negro
+
+footer
+	background-color: $verde
+	color: $blanco
+	font-family: serif
+	padding-top: 10px
+	padding-bottom: 30px
+
+
+.fondoBlanco
+	background: none repeat scroll 0 0 $blanco
+
+.fondoMarron
+	background: none repeat scroll 0 0 $marron
+
+
+.container
+	background-color: $marron
+	box-shadow: 0 0 30px #4D3E2F
+
+.right
+	text-align: right
+
+#banner
+	background: image-url('top/sauce.jpg') no-repeat
+	background-size: 100%
+	height: 180px
+
+#content
+	padding-top: 1em
+	// background: none repeat scroll 0 0 $blanco
+	// background: none repeat scroll 0 0 $marron
+	// margin-left: 2.5%
+	// padding: 25px 0
+	// width: 95%
 
 #content a
-  font-family: courier
-  font-weight: bold
-    
-body
-  color: $negro
-  
-footer
-  background-color: $verde
-  color: $blanco
-  font-family: serif
-  padding-top: 10px
-  padding-bottom: 30px
-  
-.container
-  background-color: $marron
-  box-shadow: 0 0 30px #4D3E2F
-  
-.right
-  text-align: right
-  
-#banner
-  background: image-url('top/sauce.jpg') no-repeat
-  background-size: 100%
-  height: 180px
-  
-#content
-  background: none repeat scroll 0 0 $blanco
-  margin-left: 2.5%
-  padding: 25px 0
-  width: 95%
+	font-family: courier
+	font-weight: bold
 
 #finalLine
-  margin-top: 0
-  margin-bottom: 30px
+	margin-top: 0
+	margin-bottom: 30px
 
 #logo
-  margin: 25px -400px
-  max-width: none
-  position: relative
+	margin: 25px -400px
+	max-width: none
+	position: relative
 
 #logoFooter
-  border-left: 1px solid $blanco
-  padding-left: 30px
+	border-left: 1px solid $blanco
+	padding-left: 30px
 
 #menu
-  background-color: $verdeClaro
-  color: $verde
-  font-family: monospace
-  font-size: 16pt
-  line-height: 24pt
-  padding-left: 30px
+	background-color: $verdeClaro
+	color: $verde
+	font-family: monospace
+	font-size: 16pt
+	line-height: 24pt
+	padding-left: 30px
 
 #rampa
-  +opacity(0.5)
-  border-bottom: 180px solid $negro
-  border-left: 200px solid $negro
-  border-right: 70px solid transparent
-  height: 0
-  margin-left: 90px
-  margin-top: -1px
-  padding-right: 20px
-  width: 120px
-  
+	+opacity(0.5)
+	border-bottom: 180px solid $negro
+	border-left: 200px solid $negro
+	border-right: 70px solid transparent
+	height: 0
+	margin-left: 90px
+	margin-top: -1px
+	padding-right: 20px
+	width: 120px
+
 
