@@ -2,7 +2,9 @@
 
 <div class="noticias">
 	<?php foreach ($noticias as $noticia): ?>
-		<h1 class="title"><?php echo h($noticia['Noticia']['title']) ?></h1>
+		<h1 class="title">
+			<?php echo $this->Html->link(h($noticia['Noticia']['title']), array('action'=>'view', $noticia['Noticia']['id'])) ?>
+		</h1>
 		<div class="titleLine"></div>
 		<h2 class="title">
 			<?php echo $this->Time->format('d/m/y', $noticia['Noticia']['created']) ?>

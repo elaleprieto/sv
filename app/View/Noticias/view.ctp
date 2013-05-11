@@ -1,39 +1,42 @@
-<div class="noticias view">
-<h2><?php  echo __('Noticia'); ?></h2>
-	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($noticia['Noticia']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Title'); ?></dt>
-		<dd>
-			<?php echo h($noticia['Noticia']['title']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Body'); ?></dt>
-		<dd>
-			<?php echo h($noticia['Noticia']['body']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($noticia['Noticia']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($noticia['Noticia']['modified']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('User'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($noticia['User']['name'], array('controller' => 'users', 'action' => 'view', $noticia['User']['id'])); ?>
-			&nbsp;
-		</dd>
-	</dl>
+<?php $this->Html->css('noticias/view', null, array('inline' => false)) ?>
+
+<div class="row-fluid">
+	<div class="offset1 span10">
+		<div class="row-fluid">
+			<div class="span12">
+				 <h1 class="title">
+					<?php echo h($noticia['Noticia']['title']); ?>
+				 </h1>	
+			</div>
+		</div>	
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="titleLine"></div>
+				<h2 class="title">
+					<?php echo $this->Time->format('d/m/y', $noticia['Noticia']['created']) ?>
+					·
+					<?php echo $noticia['User']['name'] ?>
+				</h2>
+			</div>
+		</div>	
+		<div class="row-fluid">
+			<div class="span12">	
+				<p class="resume">	
+					<?php echo $noticia['Noticia']['resume'] ?>
+				</p>
+			</div>
+		</div>	
+		<div class="row-fluid">
+			<div class="span12">	
+				<p class="body">	
+					<?php echo nl2br($noticia['Noticia']['body']) ?>
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
-<div class="actions">
+
+<!-- <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Noticia'), array('action' => 'edit', $noticia['Noticia']['id'])); ?> </li>
@@ -43,4 +46,4 @@
 		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div> -->
