@@ -17,7 +17,6 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,8 +29,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>
-			<?php echo $cakeDescription ?>:
-			<?php echo $title_for_layout; ?>
+			Comuna de Sauce Viejo
 		</title>
 		<?php echo $this -> Html -> meta('icon') ?>
 		

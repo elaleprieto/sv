@@ -30,8 +30,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>
-			<?php echo $cakeDescription ?>:
-			<?php echo $title_for_layout; ?>
+			Comuna de Sauce Viejo
 		</title>
 		<?php echo $this -> Html -> meta('icon') ?>
 		
@@ -70,11 +69,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 				<?php echo $this -> Session -> flash(); ?>
 	
 				<div class="row-fluid">
-					<div id="outside" class="span12">
-						<div id="inside" class="offset1 span10">
-							<div class="span12">
-								<div id="lineaTop" class="span12"></div>
-								<?php echo $this -> fetch('content'); ?>
+					<div class="span12" id="outside">
+						<div class="row-fluid" id="lineaTop">
+							<div class="offset1 span11" >
+								<?php echo $this->Html->link('Inicio', array('admin'=>FALSE, 'controller'=>'noticias', 'action'=>'index')) ?>
+								<span class="separador">|</span>
+								<?php echo $this->Html->link('Administrar', array('admin'=>TRUE, 'controller'=>'noticias', 'action'=>'index')) ?>
+								<span class="separador">|</span>
+								<?php echo $this->Html->link('Cargar Noticia', array('admin'=>TRUE, 'controller'=>'noticias', 'action'=>'add')) ?>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="offset1 span10" id="inside">
+								<div class="span12">
+									<?php echo $this -> fetch('content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
