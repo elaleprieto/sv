@@ -1,69 +1,78 @@
 @import compass/css3, colors
 
 a
-  color: $verde
-  &:hover
-    color: darken($verde, 10%)
-    text-decoration: none
+	color: $verde
+	&:hover
+		color: darken($verde, 10%)
+		text-decoration: none
 
 body
-  color: $negro
-  
+	color: $negro
+
 footer
-  background-color: $verde
-  color: $blanco
-  font-family: serif
-  padding-top: 10px
-  padding-bottom: 30px
+	background-color: $verde
+	color: $blanco
+	font-family: serif
+	padding-top: 10px
+	padding-bottom: 30px
 
 header
-  margin: 20px
-  
+	margin: 20px
+
 .container
-  background-color: $marron
-  box-shadow: 0 0 30px #4D3E2F
+	background-color: $marron
+	box-shadow: 0 0 30px #4D3E2F
 
 #content
-  background: none repeat scroll 0 0 $blanco
-  a
-    font-family: courier
-    font-weight: bold
+	background: none repeat scroll 0 0 $blanco
+	a
+		font-family: courier
+		font-weight: bold
 
 #inside
-  background: $blanco
+	background: $blanco
 
 #finalLine
-  margin-top: 0
-  margin-bottom: 30px
+	margin-top: 0
+	margin-bottom: 30px
 
 #lineaHeader
-  background-color: $verde
-  height: 25px
-  min-height: 25px
+	background-color: $verde
+	height: 25px
+	min-height: 25px
 
 #lineaTop
-  background-color: $verde
-  height: 10px
-  min-height: 10px
+	background-color: $verde
+	line-height: 30px
+	
+	a, .separador
+		color: $blanco
+		font-weight: normal
+
+	.separador
+		margin: 0 1em
+	
+	// height: 10px
+	min-height: 10px
 
 #logo
-  max-width: none
-  position: relative
-  vertical-align: bottom
+	max-width: none
+	position: relative
+	vertical-align: bottom
 
 #logoFooter
-  border-left: 1px solid $blanco
-  padding-left: 30px
-  
+	border-left: 1px solid $blanco
+	padding-left: 30px
+
 #nombreSeccion
-  border-bottom: 1px solid
-  color: $blanco
-  display: inline-block
-  font-family: monospace
-  font-size: 17pt
-  margin: 0 0 31px 5%
-  padding-bottom: 10px
-  width: 45%
+	border-bottom: 1px solid
+	color: $blanco
+	display: inline-block
+	font-family: monospace
+	font-size: 17pt
+	margin: 0 0 31px 5%
+	padding-bottom: 10px
+	width: 45%
 
 #outside
-  background-color: $marron
+	background-color: $marron

@@ -64,24 +64,33 @@ header {
 /* line 44, ../../sass/layouts/admin.sass */
 #lineaTop {
   background-color: #73822f;
-  height: 10px;
+  line-height: 30px;
   min-height: 10px;
 }
+/* line 48, ../../sass/layouts/admin.sass */
+#lineaTop a, #lineaTop .separador {
+  color: white;
+  font-weight: normal;
+}
+/* line 52, ../../sass/layouts/admin.sass */
+#lineaTop .separador {
+  margin: 0 1em;
+}
 
-/* line 49, ../../sass/layouts/admin.sass */
+/* line 58, ../../sass/layouts/admin.sass */
 #logo {
   max-width: none;
   position: relative;
   vertical-align: bottom;
 }
 
-/* line 54, ../../sass/layouts/admin.sass */
+/* line 63, ../../sass/layouts/admin.sass */
 #logoFooter {
   border-left: 1px solid white;
   padding-left: 30px;
 }
 
-/* line 58, ../../sass/layouts/admin.sass */
+/* line 67, ../../sass/layouts/admin.sass */
 #nombreSeccion {
   border-bottom: 1px solid;
   color: white;
@@ -93,7 +102,7 @@ header {
   width: 45%;
 }
 
-/* line 68, ../../sass/layouts/admin.sass */
+/* line 77, ../../sass/layouts/admin.sass */
 #outside {
   background-color: #b1a077;
 }

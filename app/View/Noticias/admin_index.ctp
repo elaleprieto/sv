@@ -1,6 +1,9 @@
-<?php $this->Html->css('noticias/admin_index', null, array('inline' => false)) ?>
-<?php $this->Html->script('noticias/admin_index', array('inline' => false)) ?>
-<?php $this->assign('nombreSeccion', 'Administrador de Noticias') ?>
+<?php 
+echo $this->Html->css('noticias/admin_index', null, array('inline' => false));
+echo $this->Html->scriptBlock('WEBROOT="'.$this -> Html-> url('/', true).'"');
+echo $this->Html->script('noticias/admin_index', array('inline' => false));
+$this->assign('nombreSeccion', 'Administrador de Noticias');
+?>
 
 <div class="row-fluid">
 	<div class="span12">
@@ -38,6 +41,8 @@
 						</div>
 						<div class="atributos span2 text-center">
 							<?php echo $this->Form->button('Guardar', array('class'=>'guardar', 'data-id'=>$noticia['Noticia']['id'], 'type'=>'button')) ?>
+							<?php echo $this->Form->button('Editar', array('class'=>'editar', 'data-id'=>$noticia['Noticia']['id'], 'type'=>'button')) ?>
+							<?php echo $this->Form->button('Eliminar', array('class'=>'eliminar', 'data-id'=>$noticia['Noticia']['id'], 'type'=>'button')) ?>
 						</div>
 					</div>
 				</div>
