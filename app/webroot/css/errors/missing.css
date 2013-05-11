@@ -1,57 +1,62 @@
-/* line 1, ../../sass/errors/missing.sass */
+/* line 3, ../../sass/errors/missing.sass */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 5, ../../sass/errors/missing.sass */
+/* line 7, ../../sass/errors/missing.sass */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 9, ../../sass/errors/missing.sass */
-h1 {
-  margin: 0 10px;
-  font-size: 50px;
-  text-align: center;
+/* line 11, ../../sass/errors/missing.sass */
+h1, h3, p, li {
+  color: #737373;
 }
 
 /* line 14, ../../sass/errors/missing.sass */
+h1 {
+  margin: 0;
+  font-size: 50px;
+  text-align: left;
+}
+
+/* line 19, ../../sass/errors/missing.sass */
 h1 span {
   color: #bbbbbb;
 }
 
-/* line 17, ../../sass/errors/missing.sass */
+/* line 22, ../../sass/errors/missing.sass */
 h3 {
   margin: 1.5em 0 0.5em;
 }
 
-/* line 20, ../../sass/errors/missing.sass */
+/* line 25, ../../sass/errors/missing.sass */
 p {
-  margin: 1em 0;
+  margin: 1em 0.3em;
 }
 
-/* line 23, ../../sass/errors/missing.sass */
+/* line 28, ../../sass/errors/missing.sass */
 ul {
   padding: 0 0 0 40px;
   margin: 1em 0;
 }
 
 /* google search */
-/* line 28, ../../sass/errors/missing.sass */
+/* line 33, ../../sass/errors/missing.sass */
 #goog-fixurl ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 33, ../../sass/errors/missing.sass */
+/* line 38, ../../sass/errors/missing.sass */
 #goog-fixurl form {
   margin: 0;
 }
 
-/* line 36, ../../sass/errors/missing.sass */
+/* line 41, ../../sass/errors/missing.sass */
 #goog-wm-qt,
 #goog-wm-sb {
   border: 1px solid #bbbbbb;
@@ -62,7 +67,7 @@ ul {
   border-radius: 2px;
 }
 
-/* line 45, ../../sass/errors/missing.sass */
+/* line 50, ../../sass/errors/missing.sass */
 #goog-wm-qt {
   width: 220px;
   height: 20px;
@@ -71,28 +76,28 @@ ul {
   box-shadow: inset 0 1px 1px #cccccc;
 }
 
-/* line 52, ../../sass/errors/missing.sass */
+/* line 57, ../../sass/errors/missing.sass */
 #goog-wm-sb {
-  display: inline-block;
-  height: 32px;
-  padding: 0 10px;
-  margin: 5px 0 0;
-  white-space: nowrap;
-  cursor: pointer;
+  *overflow: visible;
+  *display: inline;
+  *zoom: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: whitesmoke;
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
   background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0), #f1f1f1);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  *overflow: visible;
-  *display: inline;
-  *zoom: 1;
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  margin: 5px 0 0;
+  padding: 0 10px;
+  white-space: nowrap;
 }
 
-/* line 71, ../../sass/errors/missing.sass */
+/* line 76, ../../sass/errors/missing.sass */
 #goog-wm-sb:hover,
 #goog-wm-sb:focus {
   border-color: #aaaaaa;
@@ -100,7 +105,7 @@ ul {
   background-color: #f8f8f8;
 }
 
-/* line 77, ../../sass/errors/missing.sass */
+/* line 82, ../../sass/errors/missing.sass */
 #goog-wm-qt:hover,
 #goog-wm-qt:focus {
   border-color: #105cb6;
@@ -108,7 +113,7 @@ ul {
   color: #222222;
 }
 
-/* line 83, ../../sass/errors/missing.sass */
+/* line 88, ../../sass/errors/missing.sass */
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
