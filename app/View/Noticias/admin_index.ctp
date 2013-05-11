@@ -10,7 +10,7 @@ $this->assign('nombreSeccion', 'Administrador de Noticias');
 		<div class="row-fluid">
 			<div class="offset1 span10">
 				<div class="row-fluid cabecera">
-					<div class="cabecera span8 text-left">
+					<div class="cabecera span7 text-left">
 						NOTICIA
 					</div>
 					<div class="cabecera span2 text-center">
@@ -24,7 +24,7 @@ $this->assign('nombreSeccion', 'Administrador de Noticias');
 			<div class="row-fluid">
 				<div class="offset1 span10">
 					<div class="row-fluid noticia">
-						<div class="span8">
+						<div class="span7">
 							<!-- Título de la Noticia -->
 							<?php
 								$titulo =  $this->Html->tag('h1', h($noticia['Noticia']['title']), array('class'=>'title'));
@@ -39,7 +39,7 @@ $this->assign('nombreSeccion', 'Administrador de Noticias');
 						<div class="atributos span2 text-center">
 							<?php echo $this->Form->checkbox('published', array('checked'=>$noticia['Noticia']['published'])) ?>
 						</div>
-						<div class="atributos span2 text-center">
+						<div class="atributos span3 text-center">
 							<?php echo $this->Form->button('Guardar', array('class'=>'guardar', 'data-id'=>$noticia['Noticia']['id'], 'type'=>'button')) ?>
 							<?php echo $this->Form->button('Editar', array('class'=>'editar', 'data-id'=>$noticia['Noticia']['id'], 'type'=>'button')) ?>
 							<?php echo $this->Form->button('Eliminar', array('class'=>'eliminar', 'data-id'=>$noticia['Noticia']['id'], 'type'=>'button')) ?>
