@@ -10,10 +10,11 @@ a:hover {
 
 /* line 9, ../../sass/layouts/admin.sass */
 body {
+  background-color: #858566;
   color: black;
 }
 
-/* line 12, ../../sass/layouts/admin.sass */
+/* line 13, ../../sass/layouts/admin.sass */
 footer {
   background-color: #73822f;
   color: white;
@@ -22,75 +23,75 @@ footer {
   padding-bottom: 30px;
 }
 
-/* line 19, ../../sass/layouts/admin.sass */
+/* line 20, ../../sass/layouts/admin.sass */
 header {
   margin: 20px;
 }
 
-/* line 22, ../../sass/layouts/admin.sass */
+/* line 23, ../../sass/layouts/admin.sass */
 .container {
   background-color: #b1a077;
   box-shadow: 0 0 30px #4d3e2f;
 }
 
-/* line 26, ../../sass/layouts/admin.sass */
+/* line 27, ../../sass/layouts/admin.sass */
 #content {
   background: none repeat scroll 0 0 white;
 }
-/* line 28, ../../sass/layouts/admin.sass */
+/* line 29, ../../sass/layouts/admin.sass */
 #content a {
   font-family: courier;
   font-weight: bold;
 }
 
-/* line 32, ../../sass/layouts/admin.sass */
+/* line 33, ../../sass/layouts/admin.sass */
 #inside {
   background: white;
 }
 
-/* line 35, ../../sass/layouts/admin.sass */
+/* line 36, ../../sass/layouts/admin.sass */
 #finalLine {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-/* line 39, ../../sass/layouts/admin.sass */
+/* line 40, ../../sass/layouts/admin.sass */
 #lineaHeader {
   background-color: #73822f;
   height: 25px;
   min-height: 25px;
 }
 
-/* line 44, ../../sass/layouts/admin.sass */
+/* line 45, ../../sass/layouts/admin.sass */
 #lineaTop {
   background-color: #73822f;
   line-height: 30px;
   min-height: 10px;
 }
-/* line 48, ../../sass/layouts/admin.sass */
+/* line 49, ../../sass/layouts/admin.sass */
 #lineaTop a, #lineaTop .separador {
   color: white;
   font-weight: normal;
 }
-/* line 52, ../../sass/layouts/admin.sass */
+/* line 53, ../../sass/layouts/admin.sass */
 #lineaTop .separador {
   margin: 0 1em;
 }
 
-/* line 58, ../../sass/layouts/admin.sass */
+/* line 59, ../../sass/layouts/admin.sass */
 #logo {
   max-width: none;
   position: relative;
   vertical-align: bottom;
 }
 
-/* line 63, ../../sass/layouts/admin.sass */
+/* line 64, ../../sass/layouts/admin.sass */
 #logoFooter {
   border-left: 1px solid white;
   padding-left: 30px;
 }
 
-/* line 67, ../../sass/layouts/admin.sass */
+/* line 68, ../../sass/layouts/admin.sass */
 #nombreSeccion {
   border-bottom: 1px solid;
   color: white;
@@ -102,7 +103,7 @@ header {
   width: 45%;
 }
 
-/* line 77, ../../sass/layouts/admin.sass */
+/* line 78, ../../sass/layouts/admin.sass */
 #outside {
   background-color: #b1a077;
 }
