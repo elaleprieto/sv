@@ -3,7 +3,7 @@
 
 <h2 class="row text-right title">
 	<div class="span11">
-		<?php echo $this->Time->format('d/m/y', time()) . ' · ' . 'Usuario' ?>
+		<?php echo $this->Time->format('d/m/y', time()) . ' · ' . $this->Session->read('Auth.User.name') ?>
 	</div>
 </h2>
 
