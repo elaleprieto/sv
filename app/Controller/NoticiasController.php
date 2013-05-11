@@ -13,7 +13,7 @@ class NoticiasController extends AppController {
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('index');
+		$this->Auth->allow('index', 'view', 'admin_add', 'admin_index');
 	}
 
 
@@ -34,6 +34,58 @@ class NoticiasController extends AppController {
 			}
 		}
 		$this->set('users', $this->Noticia->User->find('list'));
+	}
+	
+/**
+ * admin_delete method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_delete($id = null) {
+		$this->autoRender = FALSE;
+		$this->Noticia->id = $id;
+		// $this->Noticia->id = $this->request->data['id'];
+		
+		if (!$this->Noticia->exists()) {
+			return json_encode(false);
+			// throw new NotFoundException(__('Invalid noticia'));
+		}
+		$this->request->onlyAllow('post', 'delete');
+		if ($this->Noticia->delete()) {
+			// $this->Session->setFlash(__('Noticia deleted'));
+			// $this->redirect(array('action' => 'index'));
+			return json_encode(true);
+		} else {
+			// $this->Session->setFlash(__('Noticia was not deleted'));
+			$this->redirect(array('action' => 'index'));
+			return json_encode(false);
+		}
+	}
+	
+/**
+ * admin_edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function admin_edit($id = null) {
+		if (!$this->Noticia->exists($id)) {
+			throw new NotFoundException(__('Invalid noticia'));
+		}
+		if ($this->request->is('post') || $this->request->is('put')) {
+			if ($this->Noticia->save($this->request->data)) {
+				// $this->Session->setFlash(__('The noticia has been saved'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				// $this->Session->setFlash(__('The noticia could not be saved. Please, try again.'));
+			}
+		} else {
+			$options = array('conditions' => array('Noticia.' . $this->Noticia->primaryKey => $id));
+			$this->request->data = $this->Noticia->find('first', $options);
+		}
 	}
 	
  /**
