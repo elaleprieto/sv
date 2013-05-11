@@ -25,8 +25,10 @@ class NoticiasController extends AppController {
 	public function admin_add() {
 		$this->layout = 'admin';
 		if ($this->request->is('post')) {
-			$this->Noticia->create();
-			if ($this->Noticia->save($this->request->data)) {
+			$noticia = $this->request->data['Noticia'];
+			$noticia['user_id'] = $this->Session->read('Auth.User.id');
+			$this->Noticia->create($noticia);
+			if ($this->Noticia->save($noticia)) {
 				$this->Session->setFlash(__('The noticia has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
