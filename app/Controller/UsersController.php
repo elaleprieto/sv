@@ -81,7 +81,7 @@ class UsersController extends AppController {
      // *
      // * @return void
      // */
-    // public function _add() {
+    // public function add() {
         // if ($this -> request -> is('post')) {
             // $this -> User -> create();
             // if ($this -> User -> save($this -> request -> data)) {

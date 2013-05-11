@@ -13,7 +13,7 @@ class NoticiasController extends AppController {
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('index', 'view', 'admin_add', 'admin_index');
+		$this->Auth->allow('index', 'view');
 	}
 
 
