@@ -1,6 +1,6 @@
 <?php $this->Html->css('errors/missing', null, array('inline' => false)) ?>
 
-<div class="paddingTop row-fluid">
+<div class="row-fluid">
 	<div class="offset1 span10">
 		<h1>Página no encontrada <span>:(</span></h1>
 	

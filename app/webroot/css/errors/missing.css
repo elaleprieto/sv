@@ -48,21 +48,26 @@ ul {
   margin: 1em 0;
 }
 
+/* line 35, ../../sass/errors/missing.sass */
+.paddingTop {
+  padding-top: 1em;
+}
+
 /* google search */
-/* line 36, ../../sass/errors/missing.sass */
+/* line 39, ../../sass/errors/missing.sass */
 #goog-fixurl ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 41, ../../sass/errors/missing.sass */
+/* line 44, ../../sass/errors/missing.sass */
 #goog-fixurl form {
   margin: 0;
   margin-bottom: 1em;
 }
 
-/* line 45, ../../sass/errors/missing.sass */
+/* line 48, ../../sass/errors/missing.sass */
 #goog-wm-qt,
 #goog-wm-sb {
   border: 1px solid #bbbbbb;
@@ -73,7 +78,7 @@ ul {
   border-radius: 2px;
 }
 
-/* line 54, ../../sass/errors/missing.sass */
+/* line 57, ../../sass/errors/missing.sass */
 #goog-wm-qt {
   width: 220px;
   height: 20px;
@@ -82,7 +87,7 @@ ul {
   box-shadow: inset 0 1px 1px #cccccc;
 }
 
-/* line 61, ../../sass/errors/missing.sass */
+/* line 64, ../../sass/errors/missing.sass */
 #goog-wm-sb {
   *overflow: visible;
   *display: inline;
@@ -103,7 +108,7 @@ ul {
   white-space: nowrap;
 }
 
-/* line 80, ../../sass/errors/missing.sass */
+/* line 83, ../../sass/errors/missing.sass */
 #goog-wm-sb:hover,
 #goog-wm-sb:focus {
   border-color: #aaaaaa;
@@ -111,7 +116,7 @@ ul {
   background-color: #f8f8f8;
 }
 
-/* line 86, ../../sass/errors/missing.sass */
+/* line 89, ../../sass/errors/missing.sass */
 #goog-wm-qt:hover,
 #goog-wm-qt:focus {
   border-color: #105cb6;
@@ -119,7 +124,7 @@ ul {
   color: #222222;
 }
 
-/* line 92, ../../sass/errors/missing.sass */
+/* line 95, ../../sass/errors/missing.sass */
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
