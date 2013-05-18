@@ -29,7 +29,7 @@ msgstr ""
 
 #: Controller/UsersController.php:24
 msgid "Invalid username or password, try again"
-msgstr "Nombre de usuario o contraseÃ±a invÃ¡lida, intente nuevamente."
+msgstr "Nombre de usuario o contraseña inválida, intente nuevamente."
 
 #: View/Noticias/add.ctp:4
 msgid "Add Noticia"
