@@ -19,31 +19,47 @@
 				</h2>
 			</div>
 		</div>	
-		<div class="row-fluid">
-			<div class="span12">	
-				<p class="resume">	
+		<div class="body row-fluid">
+			<?php if($noticia['Noticia']['foto']) { ?>
+				<div class="span8 resume">
 					<?php echo $noticia['Noticia']['resume'] ?>
-				</p>
-			</div>
+				</div>
+				<div class="span4">
+					<a href="#myModal" data-toggle="modal">
+						<div class="row-fluid">
+							<div class="span11">
+									<?php echo $this->Html->image('fotos/'.$noticia['Noticia']['foto']) ?>
+							</div>
+							<div class="fotoFooter span11">
+								<?php echo $noticia['Noticia']['foto_footer'] ?>
+							</div>
+						</div>
+					</a>
+				</div>
+			<?php } else { ?>
+				<div class="span12">	
+					<p class="resume">	
+						<?php echo $noticia['Noticia']['resume'] ?>
+					</p>
+				</div>
+			<?php } ?>
 		</div>	
-		<div class="row-fluid">
+		<div class="body row-fluid">
 			<div class="span12">	
-				<p class="body">	
-					<?php echo nl2br($noticia['Noticia']['body']) ?>
-				</p>
+				<?php echo nl2br($noticia['Noticia']['body']) ?>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Noticia'), array('action' => 'edit', $noticia['Noticia']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Noticia'), array('action' => 'delete', $noticia['Noticia']['id']), null, __('Are you sure you want to delete # %s?', $noticia['Noticia']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Noticias'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Noticia'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-	</ul>
-</div> -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+			&times;
+		</button>
+		<h3><?php echo $noticia['Noticia']['foto_footer'] ?></h3>
+	</div>
+	<div class="modal-body">
+		<?php echo $this->Html->image('fotos/'.$noticia['Noticia']['foto']) ?>
+	</div>
+</div>

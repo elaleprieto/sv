@@ -3,7 +3,7 @@ a {
   color: #73822f;
 }
 /* line 5, ../../sass/layouts/admin.sass */
-a:hover {
+a:hover, a:focus {
   color: #525d21;
   text-decoration: none;
 }

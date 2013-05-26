@@ -8,14 +8,15 @@ h2.title {
 /* line 8, ../../sass/noticias/admin_add.sass */
 label {
   font-family: monospace;
+  margin-top: 1em;
 }
 
-/* line 11, ../../sass/noticias/admin_add.sass */
+/* line 13, ../../sass/noticias/admin_add.sass */
 input[type="checkbox"] {
   margin: 0;
 }
 
-/* line 14, ../../sass/noticias/admin_add.sass */
+/* line 16, ../../sass/noticias/admin_add.sass */
 input[type=submit], button[type=button] {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #c0cf7b));
   background-image: -webkit-linear-gradient(top, #ffffff, #c0cf7b);
@@ -31,4 +32,9 @@ input[type=submit], button[type=button] {
   color: #73822f;
   height: 28pt;
   font-size: 14pt;
+}
+
+/* line 25, ../../sass/noticias/admin_add.sass */
+.published {
+  margin-top: 0.9em;
 }

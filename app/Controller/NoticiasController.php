@@ -30,15 +30,47 @@ class NoticiasController extends AppController {
 		if ($this->request->is('post')) {
 			$noticia = $this->request->data['Noticia'];
 			$noticia['user_id'] = $this->Session->read('Auth.User.id');
+			$noticia['foto'] = $this->_foto($noticia);
 			$this->Noticia->create($noticia);
 			if ($this->Noticia->save($noticia)) {
-				$this->Session->setFlash(__('The noticia has been saved'));
+				// $this->Session->setFlash(__('The noticia has been saved'));
 				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The noticia could not be saved. Please, try again.'));
+			// } else {
+				// $this->Session->setFlash(__('The noticia could not be saved. Please, try again.'));
 			}
 		}
 		$this->set('users', $this->Noticia->User->find('list'));
+	}
+	
+	private function _foto($noticia) {
+		if(!isset($noticia['archivo']['name'])) {
+			return null;
+		}
+		
+		# Obtengo el nombre del archivo
+		$nombreArchivo = $noticia['archivo']['name'];
+		
+		
+		# Defino el directorio donde se va a subir la foto
+		$uploaddir = IMAGES_URL . 'fotos/';
+		
+		# Defino la ruta completa
+		$uploadfile = $uploaddir . $nombreArchivo;
+		
+		# Verifico la existencia de la foto
+		if (!(file_exists($uploadfile . '.jpg') || file_exists($uploadfile . '.png'))) {
+			# Si no existe en el directorio, la copio dentro del directorio
+			if (!move_uploaded_file($noticia['archivo']['tmp_name'], $uploadfile)) {
+				# Si hubo algún error subiendo el archivo, se retorna null
+				return null;
+			}
+		}
+		
+		# Una vez que la foto ya se encuentra en el directorio,
+		# se procede a actualizar el registro del artículo con la nueva foto.
+		# Notar que si la foto ya existe, no se sube nuevamente sino que se utiliza la misma
+		# e igualmente se actualiza el artículo con esa foto.
+		return $nombreArchivo;
 	}
 	
 /**
@@ -81,7 +113,15 @@ class NoticiasController extends AppController {
 			throw new NotFoundException(__('Invalid noticia'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Noticia->save($this->request->data)) {
+			$noticia = $this->request->data['Noticia'];
+			
+			# Se verifica y se asigna la nueva foto si se modifica
+			$foto = $this->_foto($noticia);
+			if($foto != null) {
+				$noticia['foto'] = $foto;
+			}
+			
+			if ($this->Noticia->save($noticia)) {
 				// $this->Session->setFlash(__('The noticia has been saved'));
 				$this->redirect(array('action' => 'index'));
 			} else {
@@ -102,7 +142,8 @@ class NoticiasController extends AppController {
 		$this->layout = 'admin';
 		$this->Noticia->recursive = 0;
 		$this->paginate = array(
-	        'limit' => 20
+	        'limit' => 20,
+	        'order' => array('Noticia.created' => 'DESC')
 	    );
 		$this->set('noticias', $this->paginate());
 	}

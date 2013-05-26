@@ -8,7 +8,7 @@
 </h2>
 
 <div class="noticias form">
-	<?php echo $this -> Form -> create('Noticia'); ?>
+	<?php echo $this -> Form -> create('Noticia', array('enctype' => 'multipart/form-data')); ?>
 	<div class="row-fluid">
 		<?php echo $this->Form->input('title', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Título')) ?>
 	</div>
@@ -17,6 +17,12 @@
 	</div>
 	<div class="row-fluid">
 		<?php echo $this->Form->input('body', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Cuerpo')) ?>
+	</div>
+	<div class="row-fluid">
+		<?php echo $this->Form->input('archivo', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Foto', 'type'=>'file')) ?>
+	</div>
+	<div class="row-fluid">
+		<?php echo $this->Form->input('foto_footer', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Leyenda de la Foto')) ?>
 	</div>
 	<div class="row-fluid">
 		<?php

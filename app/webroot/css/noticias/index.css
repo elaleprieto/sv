@@ -25,22 +25,32 @@ p.link {
 }
 
 /* line 21, ../../sass/noticias/index.sass */
+.fotoFooter {
+  border-top: 1px solid;
+  color: #8c8c8c;
+  font-style: italic;
+  margin-left: 0 !important;
+  margin-top: 1em;
+  padding: 2px 10px;
+}
+
+/* line 29, ../../sass/noticias/index.sass */
 .noticias {
   margin-left: 30px;
 }
 
-/* line 24, ../../sass/noticias/index.sass */
+/* line 32, ../../sass/noticias/index.sass */
 .paging {
   text-align: center;
 }
 
-/* line 27, ../../sass/noticias/index.sass */
+/* line 35, ../../sass/noticias/index.sass */
 .title {
   font-family: monospace;
   margin: 0 20px;
 }
 
-/* line 31, ../../sass/noticias/index.sass */
+/* line 39, ../../sass/noticias/index.sass */
 .titleLine {
   border-top: 1px solid #bfbfbf;
   display: block;

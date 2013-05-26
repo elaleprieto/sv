@@ -12,7 +12,7 @@ $this->assign('nombreSeccion', 'Edición de Noticias');
 </h2>
 
 <div class="noticias form">
-	<?php echo $this -> Form -> create('Noticia'); ?>
+	<?php echo $this -> Form -> create('Noticia', array('enctype' => 'multipart/form-data')); ?>
 	<?php echo $this->Form->input('id') ?>
 	<div class="row-fluid">
 		<?php echo $this->Form->input('title', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Título')) ?>
@@ -24,10 +24,21 @@ $this->assign('nombreSeccion', 'Edición de Noticias');
 		<?php echo $this->Form->input('body', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Cuerpo')) ?>
 	</div>
 	<div class="row-fluid">
+		<div class="offset1 span10"><label>Foto actual</label></div>
+		<div class="offset1 span10"><em><?php echo $this->request->data['Noticia']['foto'] ? $this->request->data['Noticia']['foto'] : 'No posee.'?></em></div>
+		
+	</div>
+	<div class="row-fluid">
+		<?php echo $this->Form->input('archivo', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>'Seleccionar Nueva Foto', 'type'=>'file')) ?>
+	</div>
+	<div class="row-fluid">
+		<?php echo $this->Form->input('foto_footer', array('class'=>'span12', 'div'=>'offset1 span10', 'label'=>array('class'=>'labelLeyenda', 'text'=>'Leyenda de la Foto'))) ?>
+	</div>
+	<div class="row-fluid">
 		<?php
 		echo $this->Form->label('Noticia.published', 'Publicada: ', array('class'=>'offset1 span1'));
 		$checkbox = $this->Form->checkbox('published'); 
-		echo $this->Html->div('span1 text-center', $checkbox)
+		echo $this->Html->div('published span1 text-center', $checkbox)
 		?>
 	</div>
 	<div class="row-fluid">
