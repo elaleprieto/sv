@@ -133,7 +133,9 @@
 			<div class="absolute bottomCero rightCero pull-right span5">
 				<div class="pull-right right row-fluid">
 					<div class="span12">
-						<?php echo $this->Html->image('iconoMapa.png', array('id'=>'iconoMapa')) ?>
+						<a href="https://maps.google.com.ar/maps?q=-31.771029,-60.837203&num=1&t=h&z=16" target="_blank">
+							<?php echo $this->Html->image('iconoMapa.png', array('id'=>'iconoMapa')) ?>
+						</a>
 						<?php echo $this->Html->image('mapa.png', array('class'=>'mapa')) ?>
 					</div>
 				</div>
