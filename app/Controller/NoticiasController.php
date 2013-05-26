@@ -8,7 +8,10 @@ App::uses('AppController', 'Controller');
 class NoticiasController extends AppController {
 	
 	public $paginate = array(
-        'limit' => 2,
+        'limit' => 5,
+        'order' => array(
+            'Noticia.created' => 'DESC'
+        )
     );
 	
 	public function beforeFilter() {
@@ -130,7 +133,8 @@ class NoticiasController extends AppController {
 		$this->layout = 'default';
 		$this->paginate = array(
 	        'conditions' => array('Noticia.published'=>TRUE),
-	        'limit' => 2
+	        'limit' => 5,
+	        'order' => array('Noticia.created' => 'DESC')
 	    );
 		$this->Noticia->recursive = 0;
 		$this->set('noticias', $this->paginate());
