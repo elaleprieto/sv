@@ -6,7 +6,7 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 
-<?php echo $this -> Html -> css(array('vendor/bootstrap.min.css')) ?>
+<?php echo $this -> Html -> css('bootstrap.min.css') ?>
 
 <style>
 	body {

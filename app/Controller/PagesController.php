@@ -77,6 +77,9 @@ class PagesController extends AppController {
 		if($page == 'contacto') {
 			$this->layout = 'contacto';
 		}
+		if($page == 'info') {
+			$this->layout = 'info';
+		}
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 		$this->render(implode('/', $path));
 	}

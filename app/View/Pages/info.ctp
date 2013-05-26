@@ -1,4 +1,4 @@
-<?php $this -> Html -> css('pages/contacto', null, array('inline' => false))
+<?php $this -> Html -> css('pages/info', null, array('inline' => false))
 ?>
 
 <div class="row-fluid">

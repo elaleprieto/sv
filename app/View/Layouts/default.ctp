@@ -23,14 +23,12 @@
 						<div id="rampa" class="span6">
 						</div>
 						<div class="span6">
-							<?php echo $this->Html->link($this->Html->image('logo.png', array('id'=>'logo')), '/contacto', array('escape'=>false)) ?>
+							<?php echo $this->Html->link($this->Html->image('logo.png', array('id'=>'logo')), '/info', array('escape'=>false)) ?>
 						</div>
 					</div>
 				</div>
 			</header>
-			<nav id="menu">
-				<?php echo $this->Html->link(':: Noticias', array('controller'=>'noticias', 'action'=>'index')) ?>
-			</nav>
+			<?php echo $this->element("nav") ?>
 
 			<div class="fondoMarron row-fluid">
 				<div class="fondoBlanco offset1 span10" id="content">
