@@ -29,8 +29,8 @@
 						</div>
 					</div>
 				</div>
-				<div id="menu"><?php echo $this->Html->link(' :: Noticias', array('controller'=>'noticias', 'action'=>'index')) ?></div>
 			</header>
+			<?php echo $this->element("nav") ?>
 				
 			
 			<div class="fondoMarron row-fluid">
