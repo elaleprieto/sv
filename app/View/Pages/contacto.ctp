@@ -42,7 +42,7 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<p class="info">
-							Población: Total 6 505 hab.
+							Población: Total 8 505 hab.
 							<br />
 							Densidad: 34,42 hab/km²
 						</p>
@@ -94,16 +94,16 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<p class="info">
-							Desde Santa Fe Capital
+							<strong>Desde Santa Fe Capital</strong>
 							<br />
-							Se arriba a Sauce Viejo a través de la Ruta Nacional Nº 11, con dirección sur.
+							Se arriba a Sauce Viejo a través de la Ruta Nacional Nº 11 o siguiendo la Autopista "Brigadier General Estanislao López" que une las ciudades de Santa Fe y Rosario, con dirección sur.
 						</p>
 					</div>
 				</div>
 				<div class="row-fluid">
 					<div class="span12">
 						<p class="info">
-							Desde Paraná (Entre Ríos)
+							<strong>Desde Paraná (Entre Ríos)</strong>
 							<br />
 							Se debe tomar la Ruta Nacional Nº 168 hasta Santa Fe Capital; desde allí tomar la Ruta Nacional Nº 11 con dirección sur.
 						</p>
@@ -112,16 +112,16 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<p class="info">
-							Desde Rosario
+							<strong>Desde Rosario</strong>
 							<br />
-							Se arriba a Sauce Viejo tomando la Ruta Provincial Nº 64 y luego la Ruta Nacional Nº 11.
+							Se arriba a Sauce Viejo tomando la Ruta Provincial Nº 64 y luego la Ruta Nacional Nº 11, o siguiendo la Autopista "Brigadier General Estanislao López".
 						</p>
 					</div>
 				</div>
 				<div class="row-fluid">
 					<div class="span12">
 						<p class="info">
-							Desde Rafaela
+							<strong>Desde Rafaela</strong>
 							<br />
 							Se debe tomar la Ruta Provincial Nº 70; Ruta Provincial Nº 6; Ruta Nacional Nº 19 y finalmente la Ruta Nacional Nº 11 con dirección sur.
 						</p>
