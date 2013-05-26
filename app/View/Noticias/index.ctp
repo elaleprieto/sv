@@ -14,7 +14,7 @@
 		<p class="body">	
 			<?php echo $noticia['Noticia']['resume'] ?>
 		</p>
-		<p class="link"><?php echo $this->Html->link('[ Seguir Leyendo ]', array('action'=>'view', $noticia['Noticia']['id'])) ?></p>
+		<p class="link"><?php echo $this->Html->link('[ Seguir Leyendo ]', array('action'=>'ver', $noticia['Noticia']['id'])) ?></p>
 	<?php endforeach; ?>
 	
 	<p>
