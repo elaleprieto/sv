@@ -53,35 +53,36 @@ footer {
 
 /* line 40, ../../sass/layouts/default.sass */
 #content {
+  padding-bottom: 3em;
   padding-top: 1em;
 }
 
-/* line 48, ../../sass/layouts/default.sass */
+/* line 49, ../../sass/layouts/default.sass */
 #content a {
   font-family: courier;
   font-weight: bold;
 }
 
-/* line 52, ../../sass/layouts/default.sass */
+/* line 53, ../../sass/layouts/default.sass */
 #finalLine {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-/* line 56, ../../sass/layouts/default.sass */
+/* line 57, ../../sass/layouts/default.sass */
 #logo {
   margin: 25px -400px;
   max-width: none;
   position: relative;
 }
 
-/* line 61, ../../sass/layouts/default.sass */
+/* line 62, ../../sass/layouts/default.sass */
 #logoFooter {
   border-left: 1px solid white;
   padding-left: 30px;
 }
 
-/* line 65, ../../sass/layouts/default.sass */
+/* line 66, ../../sass/layouts/default.sass */
 #nav {
   background-color: #e5fcb8;
   color: #73822f;
@@ -90,7 +91,7 @@ footer {
   line-height: 24pt;
 }
 
-/* line 72, ../../sass/layouts/default.sass */
+/* line 73, ../../sass/layouts/default.sass */
 #rampa {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
