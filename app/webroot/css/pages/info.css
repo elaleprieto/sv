@@ -28,31 +28,41 @@ hr.title {
 }
 
 /* line 24, ../../sass/pages/info.sass */
+.bannerAside {
+  margin-top: 1em;
+}
+
+/* line 27, ../../sass/pages/info.sass */
 .bottomCero {
   bottom: 0;
 }
 
-/* line 27, ../../sass/pages/info.sass */
+/* line 30, ../../sass/pages/info.sass */
 .relative {
   position: relative;
 }
 
-/* line 30, ../../sass/pages/info.sass */
+/* line 33, ../../sass/pages/info.sass */
 .rightCero {
   right: 0;
 }
 
-/* line 33, ../../sass/pages/info.sass */
+/* line 36, ../../sass/pages/info.sass */
+.rightTreinta {
+  right: 30px;
+}
+
+/* line 39, ../../sass/pages/info.sass */
 .title {
   color: #73822f;
 }
 
-/* line 36, ../../sass/pages/info.sass */
+/* line 42, ../../sass/pages/info.sass */
 #contacto {
   margin-left: 2.5%;
 }
 
-/* line 39, ../../sass/pages/info.sass */
+/* line 45, ../../sass/pages/info.sass */
 #iconoMapa {
   margin: 315px 0 0 200px;
   position: absolute;

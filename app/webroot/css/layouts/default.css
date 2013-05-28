@@ -23,66 +23,71 @@ footer {
   padding-bottom: 30px;
 }
 
-/* line 21, ../../sass/layouts/default.sass */
-.fondoBlanco {
-  background: none repeat scroll 0 0 white;
+/* line 20, ../../sass/layouts/default.sass */
+.bannerAside {
+  margin-top: 1em;
 }
 
-/* line 24, ../../sass/layouts/default.sass */
-.fondoMarron {
-  background: none repeat scroll 0 0 #b1a077;
-}
-
-/* line 28, ../../sass/layouts/default.sass */
+/* line 23, ../../sass/layouts/default.sass */
 .container {
   background-color: #b1a077;
   box-shadow: 0 0 30px #4d3e2f;
 }
 
-/* line 32, ../../sass/layouts/default.sass */
+/* line 27, ../../sass/layouts/default.sass */
+.fondoBlanco {
+  background: none repeat scroll 0 0 white;
+}
+
+/* line 30, ../../sass/layouts/default.sass */
+.fondoMarron {
+  background: none repeat scroll 0 0 #b1a077;
+}
+
+/* line 33, ../../sass/layouts/default.sass */
 .right {
   text-align: right;
 }
 
-/* line 35, ../../sass/layouts/default.sass */
+/* line 36, ../../sass/layouts/default.sass */
 #banner {
   background: url('../../img/top/sauce.jpg?1367160351') no-repeat;
-  background-size: 100%;
+  background-size: 105%;
   height: 180px;
 }
 
-/* line 40, ../../sass/layouts/default.sass */
+/* line 41, ../../sass/layouts/default.sass */
 #content {
   padding-bottom: 3em;
   padding-top: 1em;
 }
 
-/* line 49, ../../sass/layouts/default.sass */
+/* line 45, ../../sass/layouts/default.sass */
 #content a {
   font-family: courier;
   font-weight: bold;
 }
 
-/* line 53, ../../sass/layouts/default.sass */
+/* line 49, ../../sass/layouts/default.sass */
 #finalLine {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-/* line 57, ../../sass/layouts/default.sass */
+/* line 53, ../../sass/layouts/default.sass */
 #logo {
   margin: 25px -400px;
   max-width: none;
   position: relative;
 }
 
-/* line 62, ../../sass/layouts/default.sass */
+/* line 58, ../../sass/layouts/default.sass */
 #logoFooter {
   border-left: 1px solid white;
   padding-left: 30px;
 }
 
-/* line 66, ../../sass/layouts/default.sass */
+/* line 62, ../../sass/layouts/default.sass */
 #nav {
   background-color: #e5fcb8;
   color: #73822f;
@@ -91,7 +96,7 @@ footer {
   line-height: 24pt;
 }
 
-/* line 73, ../../sass/layouts/default.sass */
+/* line 69, ../../sass/layouts/default.sass */
 #rampa {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;

@@ -62,16 +62,21 @@
 					</div>
 				</div>
 			</div>
-			<div class="offset1 span2 text-right">
+			<div class="offset1 span3">
 				<div class="row-fluid">
 					<div class="span12">
-						<?php echo $this->Html->image('telefonos.png') ?>
+						<?php echo $this->Html->image('aside/telefonos.png') ?>
+					</div>
+				</div>
+				<div class="bannerAside row-fluid">
+					<div class="span12">
+						<?php echo $this->Html->image('aside/horariosOficina.png') ?>
 					</div>
 				</div>
 			</div>
 </div>
 <div class="row-fluid">
-	<div class="offset1 span10">
+	<div class="offset1 span11">
 		<div class="relative row-fluid">
 			<div class="span7">
 				<div class="row-fluid">
@@ -130,7 +135,7 @@
 			</div>
 		
 			<!-- Mapa -->
-			<div class="absolute bottomCero rightCero pull-right span5">
+			<div class="absolute bottomCero rightTreinta pull-right span5">
 				<div class="pull-right right row-fluid">
 					<div class="span12">
 						<a href="https://maps.google.com.ar/maps?q=-31.771029,-60.837203&num=1&t=h&z=16" target="_blank">

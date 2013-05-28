@@ -1,4 +1,4 @@
-<?php $this->Html->css('noticias/index', null, array('inline' => false)) ?>
+<?php echo $this->Html->css('noticias/index', null, array('inline' => false)) ?>
 
 <div class="noticias">
 	<?php foreach ($noticias as $noticia): ?>
@@ -29,6 +29,18 @@
 						</div>
 					</a>
 				</div>
+				<!-- Modal -->
+				<div id="fotoModal<?php echo $noticia['Noticia']['id'] ?>" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h3><?php echo $noticia['Noticia']['foto_footer'] ?></h3>
+					</div>
+					<div class="modal-body">
+						<?php echo $this->Html->image('fotos/'.$noticia['Noticia']['foto']) ?>
+					</div>
+				</div>
 			<?php } else { ?>
 				<div class="span11">
 					<?php echo $noticia['Noticia']['resume'] ?>
@@ -37,17 +49,6 @@
 		</div>	
 		<p class="link"><?php echo $this->Html->link('[ Seguir Leyendo ]', array('action'=>'ver', $noticia['Noticia']['id'])) ?></p>
 
-		<div id="fotoModal<?php echo $noticia['Noticia']['id'] ?>" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					&times;
-				</button>
-				<h3><?php echo $noticia['Noticia']['foto_footer'] ?></h3>
-			</div>
-			<div class="modal-body">
-				<?php echo $this->Html->image('fotos/'.$noticia['Noticia']['foto']) ?>
-			</div>
-		</div>
 	<?php endforeach; ?>
 	
 	<p>

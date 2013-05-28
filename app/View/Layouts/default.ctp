@@ -7,7 +7,7 @@
 	<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
 		<?php echo $this->element('head') ?>
-        <?php echo $this->Html->css(array('vendor/bootstrap-responsive.min.css', 'layouts/default')) ?>
+        <?php echo $this->Html->css(array('vendor/bootstrap-responsive.min.css', 'layouts/default', 'elements/nav')) ?>
 		<?php echo $this->Html->script('vendor/modernizr-2.6.2-respond-1.1.0.min') ?>
 		<?php echo $this->fetch('meta') ?>
 		<?php echo $this->fetch('css') ?>
@@ -22,7 +22,7 @@
 					<div class="row">
 						<div id="rampa" class="span6">
 						</div>
-						<div class="span6">
+						<div class="span1">
 							<?php echo $this->Html->link($this->Html->image('logo.png', array('id'=>'logo')), '/info', array('escape'=>false)) ?>
 						</div>
 					</div>
@@ -42,8 +42,17 @@
 								</div>
 							</article>
 						</div>
-						<aside class="span2">
-							<?php echo $this->Html->image('telefonos.png') ?>
+						<aside class="span3">
+							<div class="row-fluid">
+								<div class="span12">
+									<?php echo $this->Html->image('aside/telefonos.png') ?>
+								</div>
+							</div>
+							<div class="bannerAside row-fluid">
+								<div class="span12">
+									<?php echo $this->Html->image('aside/horariosOficina.png') ?>
+								</div>
+							</div>
 						</aside>
 					</div>
 				</div>
