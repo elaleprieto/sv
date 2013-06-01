@@ -10,10 +10,49 @@ class UsersController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this -> Auth -> allow('logout');
+        $this -> Auth -> allow('contactar', 'mailup', 'logout');
         // $this -> Auth -> allow('add', 'logout');
         // $this -> Auth -> allow('contactar');
     }
+	
+	/**
+     * contactar method
+     * Se utiliza por el formulario de contacto para enviar el mensaje.
+     * @return void
+     */
+    public function contactar() {
+        $this->autoRender = FALSE;
+        if ($this->request->isPost() && isset($this->request->data)) {
+            # Validación de Campos
+            $contacto = $this->request->data['Contacto'];
+            if (isset($contacto['nombre']) && $contacto['nombre'] !== '' 
+            	&& isset($contacto['remitente']) && $contacto['remitente'] !== '' 
+            	&& isset($contacto['asunto']) && $contacto['asunto'] !== '' 
+            	&& isset($contacto['mensaje']) && $contacto['mensaje'] !== '') {
+
+                App::import('Vendor', 'contras', array('file' => 'contras.php'));
+                
+                # Se crea el mensaje
+                $mensaje = 'Enviado por: ' . $contacto['nombre'] . "\n";
+                $mensaje .= 'Mail de contacto: ' . $contacto['remitente'] . "\n";
+                $mensaje .= 'Asunto del mensaje: ' . $contacto['asunto'] . "\n";
+                $mensaje .= 'Mensaje: ' . $contacto['mensaje'];
+                
+                # Se envía el mensaje
+                mail(TO, ASUNTO, $mensaje, 'From: ' . FROM);
+				// $this->redirect('/contacto');
+				return json_encode(true);
+            }
+        }
+		return json_encode(false);
+    }
+
+	# Prueba de correo... Se puede borrar o dejar para pruebas
+	// public function mailup() {
+		// $this->autoRender = FALSE;
+		// App::import('Vendor', 'contras', array('file' => 'contras.php'));
+		// echo mail(TO, ASUNTO, 'Cuerpo del mensaje', 'From: ' . FROM);
+	// }
 
     public function login() {
         $this -> layout = 'login';
@@ -231,26 +270,6 @@ class UsersController extends AppController {
         // $this -> redirect(array('action' => 'index'));
     // }
 // 
-    // /**
-     // * contactar method
-     // * Se utiliza por el formulario de contacto para enviar el mensaje.
-     // * @return void
-     // */
-    // public function _contactar() {
-        // $this -> autoRender = FALSE;
-        // if ($this -> request -> isPost() && isset($this -> request -> data)) {
-            // # Validación de Campos
-            // $contacto = $this -> request -> data['Contacto'];
-            // if (isset($contacto['nombre']) && $contacto['nombre'] !== '' && isset($contacto['correo']) && $contacto['correo'] !== '' && isset($contacto['consulta']) && $contacto['consulta'] !== '') {
-                // App::import('Vendor', 'contras', array('file' => 'contras.php'));
-                // # Se crea el mensaje
-                // $mensaje = 'Enviado por: ' . $this -> data['Contacto']['nombre'] . "\n";
-                // $mensaje .= 'Mail de contacto: ' . $this -> data['Contacto']['correo'] . "\n";
-                // $mensaje .= 'Consulta: ' . $this -> data['Contacto']['consulta'];
-                // # Se envía el mensaje
-                // mail(TO, ASUNTO, $mensaje, 'From: ' . FROM);
-            // }
-        // }
-    // }
+
 
 }

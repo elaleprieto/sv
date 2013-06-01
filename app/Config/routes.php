@@ -29,7 +29,7 @@
 	// Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 	Router::connect('/', array('controller' => 'noticias', 'action' => 'index'));
 	Router::connect('/admin', array('admin' => TRUE, 'controller' => 'noticias', 'action' => 'index'));
-	Router::connect('/contacto', array('controller' => 'pages', 'action' => 'display', 'info'));
+	Router::connect('/contacto', array('controller' => 'pages', 'action' => 'display', 'contacto'));
 	Router::connect('/info', array('controller' => 'pages', 'action' => 'display', 'info'));
 	Router::connect('/noticias/ver/:id', array('admin' => FALSE, 'controller' => 'noticias', 'action' => 'view'), array('pass'=>array('id'), 'id'=>'[0-9]+'));
 /**
