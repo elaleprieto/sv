@@ -5,6 +5,7 @@ app/tmp/*
 app/img/fotos/*
 app/[Cc]onfig/core.php
 app/[Cc]onfig/database.php
+app/Vendor/*.php
 app/webroot/.sass-cache/*
 !empty
 *.htaccess*
