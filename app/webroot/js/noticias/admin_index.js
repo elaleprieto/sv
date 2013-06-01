@@ -1,9 +1,9 @@
 (function() {
-
   jQuery(function() {
     $('.guardar').on('click', function() {
       var form,
         _this = this;
+
       this.button = $(this);
       this.loading = $('img[data-id=' + this.button.data('id') + ']');
       this.button.attr('disabled', true);
@@ -19,10 +19,13 @@
     });
     return $('.eliminar').on('click', function() {
       var _this = this;
+
       this.button = $(this);
       this.row = this.button.parents('form');
       return $.post(WEBROOT + 'admin/noticias/delete/' + $(this).data('id'), function(data) {
-        if (data === 'true') return _this.row.hide();
+        if (data === 'true') {
+          return _this.row.hide();
+        }
       });
     });
   });
