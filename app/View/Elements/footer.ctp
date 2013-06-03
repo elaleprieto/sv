@@ -3,13 +3,13 @@
 	<div class="row">
 		<div class="span6 text-right">
 			<p>
-				Rivadavia 1164 - Teléfono 4950065 - 4950409
+				Rivadavia 1164 - Teléfono (0342) 4950065 / 4950409
 			</p>
 			<p>
 				Sauce Viejo - Santa Fe
 			</p>
 			<p>
-				Cód. Postal 3017 - Fax: 4950065
+				Cód. Postal 3017 - Fax: (0342) 4950065
 			</p>
 			<p>
 				E-mail: comunadesauceviejo@ciudad.com.ar
