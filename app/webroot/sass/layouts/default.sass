@@ -1,4 +1,5 @@
 @import compass/css3, colors
++font-face("RobotoSlab", font-files("RobotoSlab-Regular.ttf"))
 
 a, .btn-link
 	color: $verde
@@ -16,6 +17,19 @@ footer
 	font-family: serif
 	padding-top: 10px
 	padding-bottom: 30px
+
+h1.title
+	font-size: 24px
+
+h1, h2, h3
+	color: $verde
+	font-family: "RobotoSlab"
+	&.title, &.title a
+		font-family: "RobotoSlab"
+
+p a
+	font-family: courier
+	font-weight: bold
 
 .bannerAside
 	margin-top: 1em
@@ -42,9 +56,9 @@ footer
 	padding-bottom: 3em
 	padding-top: 1em
 
-#content a
-	font-family: courier
-	font-weight: bold
+// #content a
+	// font-family: courier
+	// font-weight: bold
 
 #finalLine
 	margin-top: 0
