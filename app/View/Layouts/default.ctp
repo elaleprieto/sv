@@ -18,8 +18,11 @@
 		<![endif]-->
 		<div class="container">
 	        <header class="row">
-				<div class="span12" id="banner">
+				<div class="span12">
 					<div class="row">
+						<div id="bannerTop" class="span12">
+							<?php echo $this->Html->image('top/sauce.jpg') ?>
+						</div>
 						<div id="rampa" class="span6">
 						</div>
 						<div class="span1">

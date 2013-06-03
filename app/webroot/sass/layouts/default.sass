@@ -47,10 +47,23 @@ p a
 .right
 	text-align: right
 
-#banner
-	background: image-url('top/sauce.jpg') no-repeat
-	background-size: 105%
+// #banner
+	// background: image-url('top/sauce.jpg') no-repeat
+	// // background-size: 105%
+	// // +background-size(cover)
+	// filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')
+	// -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"
+	// height: 180px
+
+#bannerTop
+	// z-index: -1
 	height: 180px
+	overflow: hidden
+	position: absolute
+	& img
+		width: 100%
+		height: 100%
+	
 
 #content
 	padding-bottom: 3em
@@ -89,6 +102,7 @@ p a
 	margin-left: 90px
 	margin-top: -1px
 	padding-right: 20px
+	position: relative
 	width: 120px
 
 

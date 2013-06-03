@@ -17,15 +17,16 @@
 		    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 		<div class="container">
-	        <header>
-				<div class="row">
-					<div id="banner" class="span12">
-						<div class="row">
-							<div id="rampa" class="span6">
-							</div>
-							<div class="span1">
-								<?php echo $this->Html->image('logo.png', array('id'=>'logo')) ?>
-							</div>
+	        <header class="row">
+				<div class="span12">
+					<div class="row">
+						<div id="bannerTop" class="span12">
+							<?php echo $this->Html->image('top/sauce.jpg') ?>
+						</div>
+						<div id="rampa" class="span6">
+						</div>
+						<div class="span1">
+							<?php echo $this->Html->link($this->Html->image('logo.png', array('id'=>'logo')), '/info', array('escape'=>false)) ?>
 						</div>
 					</div>
 				</div>
