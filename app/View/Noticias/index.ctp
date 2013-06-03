@@ -20,7 +20,7 @@
 				<div class="span4">
 					<a href="#fotoModal<?php echo $noticia['Noticia']['id'] ?>" data-toggle="modal">
 						<div class="row-fluid">
-							<div class="span12">
+							<div class="span12 text-center">
 									<?php echo $this->Html->image('fotos/'.$noticia['Noticia']['foto']) ?>
 							</div>
 							<div class="fotoFooter span12">
@@ -35,9 +35,17 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							&times;
 						</button>
-						<h3><?php echo $noticia['Noticia']['foto_footer'] ?></h3>
+						<h3>
+							<?php
+							if($noticia['Noticia']['foto_footer']) {
+								echo $noticia['Noticia']['foto_footer'];
+							} else {
+								echo $noticia['Noticia']['title'];
+							}
+							?>
+						</h3>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body text-center">
 						<?php echo $this->Html->image('fotos/'.$noticia['Noticia']['foto']) ?>
 					</div>
 				</div>
